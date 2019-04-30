@@ -1,7 +1,7 @@
 
 
 function openSlideMenu(){
-  document.getElementById('side-menu').style.width = '14%';
+  document.getElementById('side-menu').style.width = '100%';
 }
 
 function closeSlideMenu(){
