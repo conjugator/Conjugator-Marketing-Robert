@@ -272,6 +272,11 @@ footer {
   .carousel img {
     height: 100vh;
   }
+  section.section.section-a p {
+    width: 100%;
+    left: 1%;
+    height: 100%;
+  }
 }
  
 @media all and (max-width: 480px) {
