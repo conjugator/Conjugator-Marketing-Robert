@@ -29,8 +29,39 @@ body{
   margin:auto;
   text-align:center;
   overflow: hidden;
+  /* CSS Smooth Scroll */
+  /* overflow-y: scroll; 
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; */
+}
+/* adding snaping effect need */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+   
+    /* Scroll Snap */
+    scroll-snap-align: center;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+ 
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+
+/* video */
 .fullscreen-video-wrap{
   position:absolute;
   top:0;
@@ -44,7 +75,7 @@ body{
   min-height:100%;
   min-width: 100%;
 }
-
+/*  overlay for header */
 .header-overlay{
   height:100vh;
   position: absolute;
@@ -58,7 +89,6 @@ body{
 
 .header-content{
   z-index:1;
-  padding-left: 25%;
 }
 
 .header-content h1{
@@ -71,11 +101,20 @@ body{
   display:block;
   padding-bottom:2rem;
 }
-
+/* section  */
 .section{
   padding:20px 0;
 }
 
+section.section.section-a h2{
+  font-size: 4rem;
+}
+section.section.section-a p{
+  width: 50%;
+  position: relative;
+  left: 25%;
+  font-size: 20px;
+}
 .section-b{
   background:#333;
   color:#fff;
@@ -151,17 +190,58 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media all and (max-width: 480px) { 
- .header-content {
-   padding-left: 0%;
- }
+/* Carousel */
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  /* margin-top: 16px; */
 }
-/* Portrait */
-@media screen and (orientation:portrait) { 
+@media (min-width: 1200px) {
+  .carousel {
+    width: 100vw;
+  }
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: #fff;
+  background-color: #333;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.carousel img {
+  width: 100%;
+  display: none;
+}
 
-}
-/* Landscape */
-@media screen and (orientation:landscape) { 
-
-}
   
