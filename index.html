@@ -10,12 +10,24 @@
   <body>
     <div class="container">
       <header class="v-header">
+          <div class="nav-btn" >
+              <div onClick="openSlideMenu()">
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div>
+               </div>
+             </div>
+             <div id="side-menu" class="side-nav" style="width: 0px;">
+                 <a href="#" class="btn-close" onclick="closeSlideMenu()">×</a>
+                 <a href="#">Sign Up</a>
+                 <a href="#">Log In</a>
+            </div>
           <div class="fullscreen-video-wrap">
             <video src="./source/video/Workaholic.mp4" type="video/mp4" autoplay="autoplay" loop="loop">
           </video>
           </div>
           <div class="header-overlay">
-               <div class="nav-btn" >
+               <!-- <div class="nav-btn" >
                  <div onClick="openSlideMenu()">
                   <div class="line"></div>
                   <div class="line"></div>
@@ -26,7 +38,7 @@
                     <a href="#" class="btn-close" onclick="closeSlideMenu()">×</a>
                     <a href="#">Sign Up</a>
                     <a href="#">Log In</a>
-                  </div>
+               </div> -->
           </div>
           <div class="header-content text-md-center">
             <h1>Welcome Everyone to Spanish Verb Conjugation</h1>
@@ -41,6 +53,7 @@
             <p>Hello and welcome to the Spanish Verb Conjugation! Here you will go through a series of exercises all targeted at making you proficient in using spanish verbs. An easy way to learn the Spanish conjugation online for free. Learn Regular and Irregular Spanish conjugation through this comprehensive course of a game. Please feel free to sign up and start practicing today.</p>
           </div>
         </section>
+
         <footer class="center">
           <p>Created By Robert Gant &copy; 2019</p>
         </footer>
