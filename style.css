@@ -110,10 +110,11 @@ section.section.section-a h2{
   font-size: 4rem;
 }
 section.section.section-a p{
-  width: 50%;
+  width: 50vw;
   position: relative;
   left: 25%;
   font-size: 20px;
+  height: auto;
 }
 .section-b{
   background:#333;
@@ -243,5 +244,37 @@ footer {
   width: 100%;
   display: none;
 }
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  .carousel img {
+    height: 100vh;
+  }
+ }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .carousel img {
+    height: 100vh;
+  }
+ }
+@media all and (min-width: 480px) and (max-width: 768px) { 
+  section.section.section-a p {
+    font-size: 18px;
+  }
+  .carousel img {
+    height: 100vh;
+  }
+}
+ 
+@media all and (max-width: 480px) {
+  .carousel {
+    height: 100vh;
+  }
+  .carousel img {
+    height: 100vh;
+  }
+
+  section.section.section-a p {
+    font-size: 18px;
+  }
+ }
 
   
