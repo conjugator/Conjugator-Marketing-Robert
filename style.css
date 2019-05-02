@@ -276,6 +276,7 @@ footer {
     width: 100%;
     left: 1%;
     height: 100%;
+    font-size: 18px;
   }
 }
  
@@ -291,9 +292,7 @@ footer {
     width: 100%;
     left: 1%;
     height: 100%;
-  }
-  .container{
-   height: 100vh;
+    font-size: 18px;
   }
  }
 
