@@ -236,6 +236,14 @@ footer {
   height: 100%;
   display: none;
 }
+#fun-img{
+  position: absolute;
+  z-index: -1;
+   top: 220%;
+  left:1%;
+  width: 30%;
+  height: auto;
+}
 /* mhhhhm */
 @media all and (min-width: 1024px) and (max-width: 1280px) {
   .carousel {

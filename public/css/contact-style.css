@@ -123,7 +123,6 @@ img {
   color: var(--light);
 }
 
-
 /* LARGE SCREENS */
 @media(min-width:700px){
   .wrapper{
